@@ -1,0 +1,38 @@
+{
+  "_note": "Scheduled cloud agents (Claude Code routines). Times are UTC cron; IST = UTC+5:30. Prompt text is in the .md file named in 'prompt_file'. Recreate with Claude Code /schedule (or RemoteTrigger create), or with any scheduler that can run an LLM agent with these connectors.",
+  "exported": "2026-11-27",
+  "routines": [
+    {
+      "name": "PhD Co-pilot - daily deadline scan (9:00 IST)",
+      "cron_utc": "30 3 * * *",
+      "model": "claude-sonnet-5-5",
+      "connectors": ["Gmail", "Google_Calendar", "Google_Sheets"],
+      "optional_connectors": ["Microsoft_365"],
+      "tools": ["Read", "Write", "Glob", "Grep"],
+      "prompt_file": "daily-deadline-scan.md"
+    },
+    {
+      "name": "PhD Co-pilot - weekly review email (Sun 9:00 IST)",
+      "cron_utc": "30 3 * * 0",
+      "model": "claude-sonnet-5-5",
+      "connectors": ["Gmail", "Google_Calendar", "Google_Sheets"],
+      "optional_connectors": ["Microsoft_365"],
+      "tools": ["Read", "Write", "Glob", "Grep"],
+      "prompt_file": "weekly-review.md"
+    },
+    {
+      "name": "PhD Co-pilot - tech radar brief (08:00 + 19:00 IST)",
+      "cron_utc": "30 2,13 * * *",
+      "model": "claude-sonnet-5-5",
+      "connectors": ["Gmail", "Google_Sheets"],
+      "tools": ["WebSearch", "WebFetch", "Read", "Write", "Glob", "Grep"],
+      "prompt_file": "tech-radar.md"
+    }
+  ],
+  "google_sheet": {
+    "name": "00_PhD_Master_Command_Center",
+    "id": "1EQhgXFWA8MRJCgLbdHtVmNkvTTZa5Iwi765dqSZJLQo",
+    "tabs": ["Agile_Roadmap", "Literature_Matrix", "Experiment_Ledger", "Supervisor_Decisions", "Cotutelle_&_ECTS_Admin", "Tech_Radar"],
+    "layout": "title rows 1-5, header row 7, data from row 8"
+  }
+}

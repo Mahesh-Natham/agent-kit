@@ -1,0 +1,4 @@
+- [User PhD profile](user-phd-profile.md) — cotutelle PhD with Centrale Lille, EVRP + deep RL, AI beginner learning fast, builds an AGV
+- [AEV project](aev-project.md) — Jetson + STM32 vehicle repo, ROS 2 migration, open audit findings (not to fix unless asked)
+- [PhD co-pilot](phd-copilot.md) — skill + 3 cloud routines (daily calendar scan, Sunday review, twice-daily tech radar), never-delete rule
+- [Share to understand](share-to-understand.md) — "analyse my files" can mean "get to know me", not audit/fix

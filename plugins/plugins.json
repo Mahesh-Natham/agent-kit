@@ -1,0 +1,63 @@
+﻿{
+    "enabledPlugins":  {
+                           "skins@hellosverre-mods":  true,
+                           "cc-plugin-you-should-know@builtin":  true,
+                           "reflect-mod@claude-reflect-marketplace":  true,
+                           "replay-theater@claude-code-playground-mods":  true,
+                           "taste-skill@taste-skill":  true,
+                           "ponytail@ponytail":  true,
+                           "input-router@token-saving-mods":  true,
+                           "effort-optimizer@token-saving-mods":  true,
+                           "model-router@token-saving-mods":  true,
+                           "cache-clock@token-saving-mods":  true,
+                           "handoff@token-saving-mods":  true,
+                           "research-router@token-saving-mods":  true,
+                           "efficient-browser-use@token-saving-mods":  true,
+                           "mods@token-saving-mods":  true,
+                           "savings-proof@token-saving-mods":  true
+                       },
+    "marketplaces":  {
+                         "hellosverre-mods":  {
+                                                  "source":  {
+                                                                 "source":  "github",
+                                                                 "repo":  "hellosverre/claude-skins"
+                                                             }
+                                              },
+                         "claude-code-mods":  {
+                                                  "source":  {
+                                                                 "source":  "github",
+                                                                 "repo":  "karanb192/claude-code-mods"
+                                                             }
+                                              },
+                         "claude-reflect-marketplace":  {
+                                                            "source":  {
+                                                                           "source":  "github",
+                                                                           "repo":  "bayramannakov/claude-reflect"
+                                                                       }
+                                                        },
+                         "claude-code-playground-mods":  {
+                                                             "source":  {
+                                                                            "source":  "directory",
+                                                                            "path":  "C:\\Users\\mahes\\claude-mods\\claude-code-playground\\claude-code\\mods"
+                                                                        }
+                                                         },
+                         "taste-skill":  {
+                                             "source":  {
+                                                            "source":  "git",
+                                                            "url":  "https://github.com/Leonxlnx/taste-skill.git"
+                                                        }
+                                         },
+                         "ponytail":  {
+                                          "source":  {
+                                                         "source":  "git",
+                                                         "url":  "https://github.com/DietrichGebert/ponytail.git"
+                                                     }
+                                      },
+                         "token-saving-mods":  {
+                                                   "source":  {
+                                                                  "source":  "directory",
+                                                                  "path":  "C:\\Users\\mahes\\Downloads\\token-saving-mods"
+                                                              }
+                                               }
+                     }
+}
